@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridView
-    android:id="@+id/images_grid_view"
-    android:adjustViewBounds = "true"
-    android:columnWidth="180dp"
-    android:gravity="center"
-    android:horizontalSpacing="8dp"
-    android:verticalSpacing="8dp"
-    android:padding="16dp"
-    android:stretchMode="columnWidth"
-    android:numColumns="3"
-    android:layout_height="wrap_content"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android" />
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/images_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:adjustViewBounds="true"
+        android:columnWidth="180dp"
+        android:gravity="center"
+        android:horizontalSpacing="8dp"
+        android:numColumns="3"
+        android:padding="16dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="8dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Next"
+        android:id="@+id/next_button"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>
